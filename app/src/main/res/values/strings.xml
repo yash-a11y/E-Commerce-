@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">e-commarce</string>
+    <string-array name="city">
+        <item>x</item>
+        <item>y</item>
+        <item>z</item>
+
+    </string-array>
+    <string name="rupi">₹</string>
+</resources>
+

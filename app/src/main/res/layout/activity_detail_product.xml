@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail_product">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/actn_prod"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/teal_200"
+
+        />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/apple_banne2"
+        android:scaleType="fitCenter"
+        android:layout_marginVertical="18dp"
+        android:layout_below="@+id/actn_prod"
+        android:layout_marginHorizontal="15dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginHorizontal="15dp"
+        android:text="name"
+        android:textSize="@dimen/_25dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="@dimen/_10dp"
+        android:text="Price /-"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/qnty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="@dimen/_10dp"
+        android:layout_toRightOf="@+id/price"
+        android:text="Per unit"
+        android:textSize="23sp" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10dp"
+        android:layout_below="@+id/qnty"
+        android:layout_marginHorizontal="15dp"
+        android:textSize="23sp"
+        />
+
+</RelativeLayout>
